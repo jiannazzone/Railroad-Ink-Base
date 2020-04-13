@@ -45,6 +45,16 @@ function setup() {
   makeDice();
 }
 
+function draw() {
+  fill(255);
+  stroke(42, 55, 118);
+  rect(width/2, height*(40/64), width/2, height/16);
+  fill(0);
+  noStroke();
+  text("Round: " + round, width/2, height*(40/64));
+  
+}
+
 function makeScale() {
   diceSize = (width - 7 * padding) / 4;
   diceY = (25 / 32) * height;
@@ -109,4 +119,9 @@ function rollDice() {
     diceX[3] - diceSize / 2, diceY - diceSize / 2,
     diceSize, diceSize);
   makeDice();
+  if (round < 7){
+    round++;
+  } else {
+    round = 1;
+  }
 }
