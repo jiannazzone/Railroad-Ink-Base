@@ -18,21 +18,21 @@ function preload() {
   logo = loadImage('assets/logo.png');
 
   //load images for first and second dice
-  die1.push(loadImage('assets/dice/0_0.jpg'));
-  die1.push(loadImage('assets/dice/0_1.png'));
-  die1.push(loadImage('assets/dice/0_2.png'));
-  die1.push(loadImage('assets/dice/0_3.png'));
-  die1.push(loadImage('assets/dice/0_4.png'));
-  die1.push(loadImage('assets/dice/0_5.png'));
+  die1.push(loadImage('assets/dice/0_0.svg'));
+  die1.push(loadImage('assets/dice/0_1.svg'));
+  die1.push(loadImage('assets/dice/0_2.svg'));
+  die1.push(loadImage('assets/dice/0_3.svg'));
+  die1.push(loadImage('assets/dice/0_4.svg'));
+  die1.push(loadImage('assets/dice/0_5.svg'));
   die2 = die1;
 
   //load images for third and fourth dice
-  die3.push(loadImage('assets/dice/1_0.png'));
-  die3.push(loadImage('assets/dice/1_1.png'));
-  die3.push(loadImage('assets/dice/1_2.png'));
-  die3.push(loadImage('assets/dice/1_3.png'));
-  die3.push(loadImage('assets/dice/1_4.jpg'));
-  die3.push(loadImage('assets/dice/1_5.jpg'));
+  die3.push(loadImage('assets/dice/1_0.svg'));
+  die3.push(loadImage('assets/dice/1_1.svg'));
+  die3.push(loadImage('assets/dice/1_2.svg'));
+  die3.push(loadImage('assets/dice/1_3.svg'));
+  die3.push(loadImage('assets/dice/1_4.svg'));
+  die3.push(loadImage('assets/dice/1_5.svg'));
   die4 = die3;
 }
 
