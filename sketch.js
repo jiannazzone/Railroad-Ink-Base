@@ -93,7 +93,7 @@ function makeButton() {
 function makeDice() {
   for (let i = 0; i < 4; i++) {
     stroke(0);
-    noFill();
+    fill(255);
     square(diceX[i], diceY, diceSize, padding);
   }
 }
@@ -107,6 +107,7 @@ function mousePressed() {
 }
 
 function rollDice() {
+  makeDice();
   image(random(die1),
     diceX[0] - diceSize / 2, diceY - diceSize / 2,
     diceSize, diceSize);
@@ -119,7 +120,6 @@ function rollDice() {
   image(random(die4),
     diceX[3] - diceSize / 2, diceY - diceSize / 2,
     diceSize, diceSize);
-  makeDice();
   if (round < 7){
     round++;
   } else {
