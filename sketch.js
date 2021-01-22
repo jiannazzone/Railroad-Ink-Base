@@ -100,7 +100,8 @@ function makeDice() {
 
 function mousePressed() {
   if (mouseY >= height / 2 &&
-    mouseY <= (9 / 16) * height + 5) {
+    mouseY <= (9 / 16) * height + 5 &&
+     mouseX >= 0 && mouseX <= width) {
     rollDice();
   }
 }
